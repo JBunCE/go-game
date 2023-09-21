@@ -32,11 +32,11 @@ func (m *MainMenu) PrincipalMenu() {
 	exit.Resize(fyne.NewSize(200, 50))
 	exit.Move(fyne.NewPos(650, 260))
 
-	enemyImag := canvas.NewImageFromFile("src/micelaneus/demon.png")
+	enemyImag := canvas.NewImageFromFile("assets/menu/demon.png")
 	enemyImag.Resize(fyne.NewSize(512, 512))
 	enemyImag.Move(fyne.NewPos(950, 150))
 
-	playerImag := canvas.NewImageFromFile("src/micelaneus/Azrael.png")
+	playerImag := canvas.NewImageFromFile("assets/menu/Azrael.png")
 	playerImag.Resize(fyne.NewSize(512, 512))
 	playerImag.Move(fyne.NewPos(50, 150))
 
@@ -56,7 +56,7 @@ func (m *MainMenu) credits() {
 	author := widget.NewLabel("Jorge B. >> CONEJO <<")
 	author.Move(fyne.NewPos(670, 50))
 
-	image := canvas.NewImageFromFile("src/micelaneus/iwi.png")
+	image := canvas.NewImageFromFile("assets/menu/iwi.png")
 	image.Resize(fyne.NewSize(380, 520))
 	image.Move(fyne.NewPos(550, 100))
 

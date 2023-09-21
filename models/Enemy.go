@@ -1,4 +1,4 @@
-package structures
+package models
 
 import (
 	"fyne.io/fyne/v2"
@@ -20,13 +20,13 @@ func NewEnemy(name string) *Enemy {
 		life: 100,
 		name: name,
 		idleSprites: [7]*canvas.Image{
-			canvas.NewImageFromFile("src/sprites/enemy/idle/enemy_idle0.png"),
-			canvas.NewImageFromFile("src/sprites/enemy/idle/enemy_idle1.png"),
-			canvas.NewImageFromFile("src/sprites/enemy/idle/enemy_idle2.png"),
-			canvas.NewImageFromFile("src/sprites/enemy/idle/enemy_idle3.png"),
-			canvas.NewImageFromFile("src/sprites/enemy/idle/enemy_idle4.png"),
-			canvas.NewImageFromFile("src/sprites/enemy/idle/enemy_idle5.png"),
-			canvas.NewImageFromFile("src/sprites/enemy/idle/enemy_idle6.png"),
+			canvas.NewImageFromFile("assets/sprites/enemy/idle/enemy_idle0.png"),
+			canvas.NewImageFromFile("assets/sprites/enemy/idle/enemy_idle1.png"),
+			canvas.NewImageFromFile("assets/sprites/enemy/idle/enemy_idle2.png"),
+			canvas.NewImageFromFile("assets/sprites/enemy/idle/enemy_idle3.png"),
+			canvas.NewImageFromFile("assets/sprites/enemy/idle/enemy_idle4.png"),
+			canvas.NewImageFromFile("assets/sprites/enemy/idle/enemy_idle5.png"),
+			canvas.NewImageFromFile("assets/sprites/enemy/idle/enemy_idle6.png"),
 		},
 		spriteSize:          fyne.NewSize(512, 512),
 		spritePos:           fyne.NewPos(910, 150),

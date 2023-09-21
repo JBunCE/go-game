@@ -1,4 +1,4 @@
-package structures
+package models
 
 import (
 	"fmt"
@@ -26,13 +26,13 @@ func NewPlayer(name string) IPlayer {
 		Life: 100,
 		name: name,
 		sprites: [7]*canvas.Image{
-			canvas.NewImageFromFile("src/sprites/player/main/sprite_idle0.png"),
-			canvas.NewImageFromFile("src/sprites/player/main/sprite_idle1.png"),
-			canvas.NewImageFromFile("src/sprites/player/main/sprite_idle2.png"),
-			canvas.NewImageFromFile("src/sprites/player/main/sprite_idle3.png"),
-			canvas.NewImageFromFile("src/sprites/player/main/sprite_idle4.png"),
-			canvas.NewImageFromFile("src/sprites/player/main/sprite_idle5.png"),
-			canvas.NewImageFromFile("src/sprites/player/main/sprite_idle6.png"),
+			canvas.NewImageFromFile("assets/sprites/player/idle/sprite_idle0.png"),
+			canvas.NewImageFromFile("assets/sprites/player/idle/sprite_idle1.png"),
+			canvas.NewImageFromFile("assets/sprites/player/idle/sprite_idle2.png"),
+			canvas.NewImageFromFile("assets/sprites/player/idle/sprite_idle3.png"),
+			canvas.NewImageFromFile("assets/sprites/player/idle/sprite_idle4.png"),
+			canvas.NewImageFromFile("assets/sprites/player/idle/sprite_idle5.png"),
+			canvas.NewImageFromFile("assets/sprites/player/idle/sprite_idle6.png"),
 		},
 		spriteSize: fyne.NewSize(512, 512),
 	}

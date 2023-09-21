@@ -4,7 +4,7 @@ import (
 	"fyne.io/fyne/v2"
 	"fyne.io/fyne/v2/container"
 	"fyne.io/fyne/v2/widget"
-	"jueguito/structures"
+	"jueguito/models"
 	"strconv"
 )
 
@@ -19,13 +19,13 @@ func NewFirstScene(window fyne.Window, app fyne.App) *FirstScene {
 }
 
 func (f *FirstScene) StartScene() {
-	player := structures.NewPlayer("mondongo")
+	player := models.NewPlayer("mondongo")
 	playerLife := widget.NewLabel("Player life" + strconv.Itoa(player.GetLife()))
 	playerLife.Move(fyne.NewPos(250, 100))
 	f.container.Add(playerLife)
 	player.Print(f.container)
 
-	enemy := structures.NewEnemy("papoi")
+	enemy := models.NewEnemy("papoi")
 	enemy.Print(f.container)
 	enemyLife := widget.NewLabel("Enemy life:" + strconv.Itoa(enemy.GetLife()))
 	enemyLife.Move(fyne.NewPos(1150, 100))
